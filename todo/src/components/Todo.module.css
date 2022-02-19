@@ -1,0 +1,27 @@
+.strick{
+    text-decoration: line-through;
+}
+
+.normal{
+    text-decoration: normal;
+}
+
+.todoItem{
+    display: flex;
+    font-size: 20px;
+}
+button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+span{
+    margin-right: 20px;
+}
