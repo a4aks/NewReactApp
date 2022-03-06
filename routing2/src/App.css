@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.navbar{
+  display: grid;
+  max-width: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+}
+
+.box{
+  border: 1px solid red;
+  padding: 10px;
+  margin:10px;
+}
