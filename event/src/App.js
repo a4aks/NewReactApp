@@ -81,7 +81,7 @@ function App() {
             </div> */}{" "}
       <h1> Stop Watch: {timer} </h1>{" "}
       <button onClick={startTimer}> Start </button>{" "}
-      <button onClick={endAT10}>Start and End at 10</button>
+      {/* <button onClick={endAT10}>Start and End at 10</button> */}
       <button onClick={pauseTimer}> Pause </button>{" "}
       <button onClick={resetTimer}> Reset </button>{" "}
     </div>
