@@ -8,9 +8,15 @@ export const VegName = () => {
        <Counter>
          <h3>Tomatoes</h3>
        </Counter>
-       {/* <Counter name = "Tomatoes"/>
-       <Counter name = "Tomatoes"/>
-       <Counter name = "Tomatoes"/> */}
+       <Counter>
+         <h3>Potatos</h3>
+       </Counter>
+       <Counter>
+         <h3>Carrots</h3>
+       </Counter>
+       <Counter>
+         <h3>Onions</h3>
+       </Counter>       
     </div>
   )
 }
