@@ -10,7 +10,7 @@ export const Todo = () => {
     }
   return (
     <div>
-         <TodoInput onAdd = {onAdd}/>
+         <TodoInput onAdd = {onAdd} todos = {todos}/>
         <div>
             <ul>
                {todos.map((todo) =>{
