@@ -1,10 +1,10 @@
-import React,{Children, useState} from 'react';
+import React, {Children, useState} from 'react';
 
-export const Count = () => {
+export const Counter = (props) => {
     const [count, setCount] = useState(0);
     return (
       <div>
-          <h2>{Children}:  {count}</h2>
+          <h2>{props.Children}:  {count}</h2>
           <div>
               <button onClick={(e) => {setCount(count+1)}}>+</button>
               <button onClick={(e) => {setCount(count-1)}}>-</button>

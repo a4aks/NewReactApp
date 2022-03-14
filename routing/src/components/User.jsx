@@ -9,12 +9,13 @@ export const User = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (params.cake) {
+    if (params.id) {
         console.log(params)
-      fetch(`http://localhost:3000/users/${params.cake}`)
+      fetch(`http://localhost:3000/users/${params.id}`)
       .then((r) => r.json())
       .then((d) =>setUser(d));
     }
   }, [params]);
-  return <div>{user.id}: User: {user.name}</div>;
+  return <div>{user.id} Item Name: {user.name} Price :{user.price}
+  </div>;
 };

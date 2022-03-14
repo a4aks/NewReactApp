@@ -1,11 +1,10 @@
+
 import './App.css';
-import { VegName } from './Vegetables/VegName';
-import {Todo} from './Wishlist/Todo';
+import {Todo} from './components/Todo.jsx';
 
 function App() {
   return (
     <div className="App">
-      <VegName />
       <Todo />
     </div>
   );

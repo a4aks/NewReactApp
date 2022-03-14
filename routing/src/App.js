@@ -12,10 +12,10 @@ function App() {
       <Routes>
         <Route path = "/" element = {  <Home />}/>
         <Route path = "about" element = { <About />}/>
-        <Route path = "users" element = { <Users />}>
-            <Route path = "new" element = { <User />} />
+        <Route path = "users/*" element = { <Users />}>
+            {/* <Route path = "new" element = { <User />} /> */}
         </Route>
-        <Route path = "users/:cake" element ={<User />}/>
+        {/* <Route path = "users/:cake" element ={<User />}/> */}
         <Route path = "*" element ={<NotFound  />}/>
       </Routes>
     </div>
