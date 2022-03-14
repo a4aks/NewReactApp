@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export const TodoInput = ({ onAdd, todos }) => {
   const [value, setValue] = useState("");
   console.log(todos.length);
-  if (todos.length <= 3) {
+  if (todos.length < 3) {
     return (
       <div>
         <h2> WishList</h2>
