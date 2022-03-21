@@ -13,11 +13,16 @@ export const Employee = () => {
     getEmployee();
   }, []);
 
+  const showByMarketing = () =>{
+      const newEmployee = employee.filter(emp => emp.department === "Marketing");
+      console.log(newEmployee);
+      setEmployee(newEmployee)
+  }
   const getEmployee = () => {
     fetch(`http://localhost:3001/employees`)
       .then((res) => res.json())
       .then((res) => {
-        setEmployee([...employee, res]);
+        setEmployee([res]);
       })
       .catch((err) => console.log(err));
   };
@@ -39,14 +44,16 @@ export const Employee = () => {
         "content-type": "application/json",
       },
     })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
+       getEmployee();
       })
       .catch((err) => console.log(err));
   };
 
   return (
+     
     <div>
+         <h1>Employee Details</h1>
       <div style={{ display: "flex", flexDirection: "column", width: "300px" }}>
         <input
           type="text"
@@ -81,8 +88,8 @@ export const Employee = () => {
         <button onClick={handleAdd}>ADD EMPLOYEE</button>
       </div>
       <div>
-          <button>Show All Departments</button>
-          <button>Show Marketing</button>
+          <button onClick={getEmployee}>Show All Departments</button>
+          <button onClick={showByMarketing}>Show Marketing</button>
           <button>Show HR</button>
           <button>SHow IT</button>
           <button>Show Finance</button>

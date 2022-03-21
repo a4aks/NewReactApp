@@ -31,6 +31,78 @@
       "role": "Head",
       "salary": "40000",
       "id": 4
+    },
+    {
+      "name": "Ankur",
+      "gender": "Male",
+      "department": "Finance",
+      "role": "Head",
+      "salary": "15000",
+      "id": 5
+    },
+    {
+      "name": "Ritesh",
+      "gender": "Male",
+      "department": "IT",
+      "role": "Developer",
+      "salary": "28000",
+      "id": 6
+    },
+    {
+      "name": "Vivek",
+      "gender": "Male",
+      "department": "Finance",
+      "role": "Head",
+      "salary": "34000",
+      "id": 7
+    },
+    {
+      "name": "Avnash",
+      "gender": "Male",
+      "department": "Marketing",
+      "role": "Sales",
+      "salary": "15000",
+      "id": 8
+    },
+    {
+      "name": "Pushpendra",
+      "gender": "Male",
+      "department": "Marketing",
+      "role": "Head",
+      "salary": "50000",
+      "id": 9
+    },
+    {
+      "name": "Arpita",
+      "gender": "Female",
+      "department": "IT",
+      "role": "Developer",
+      "salary": "60000",
+      "id": 10
+    },
+    {
+      "name": "Ankita",
+      "gender": "Female",
+      "department": "HR",
+      "role": "Head",
+      "salary": "40000",
+      "id": 11
+    },
+    {
+      "name": "Kashish",
+      "gender": "Female",
+      "department": "HR",
+      "role": "Head",
+      "salary": "12000",
+      "id": 12
+    },
+    {
+      "name": "Sona",
+      "gender": "Female",
+      "department": "Finance",
+      "role": "Assistant",
+      "salary": "15000",
+      "id": 13
     }
   ]
 }
