@@ -15,6 +15,22 @@
       "role": "Manager",
       "salary": "40000",
       "id": 2
+    },
+    {
+      "name": "Ruchi",
+      "gender": "Female",
+      "department": "Home",
+      "role": "Head",
+      "salary": "20000",
+      "id": 3
+    },
+    {
+      "name": "Sumit",
+      "gender": "Male",
+      "department": "HR",
+      "role": "Head",
+      "salary": "40000",
+      "id": 4
     }
   ]
 }

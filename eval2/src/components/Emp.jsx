@@ -1,20 +1,20 @@
-import React from 'react'
+import React from "react";
 
-export const Emp = ({emp}) => {
- console.log(emp)
+export const Emp = ({ emp }) => {
+  console.log(emp);
   return (
     <div>
-        {emp.map((emp) =>{
-          return (
-              <>
-          <div>Name: {emp.name}</div>
-          <p>{emp.gender}</p>
-          <p>{emp.role}</p>
-          <p>{emp.department}</p>
-          <p>{emp.salary}</p>
-          </>
-          )
-        })}
+      {emp.map((emp) => {
+        return (
+          <div style={{padding: "20px", border:"2px solid black", margin: "10px", width:"400px"}}>
+            <div>Name: {emp.name}</div>
+            <div>Gender: {emp.gender}</div>
+            <div>Role :{emp.role}</div>
+            <div>Department :{emp.department}</div>
+            <div>Salary :{emp.salary}</div>
+            </div>
+        );
+      })}
     </div>
-  )
-}
+  );
+};

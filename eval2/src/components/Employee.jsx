@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import {Emp} from "./Emp.jsx";
+import { Emp } from "./Emp.jsx";
 
 export const Employee = () => {
-  const[employee, setEmployee] = useState([]);
+  const [employee, setEmployee] = useState([]);
   const [name, setName] = useState("");
   const [gender, setGender] = useState("");
   const [department, setDepartment] = useState("");
@@ -14,10 +14,11 @@ export const Employee = () => {
   }, []);
 
   const getEmployee = () => {
-      fetch(`http://localhost:3001/employees`)
+    fetch(`http://localhost:3001/employees`)
       .then((res) => res.json())
-      .then((res) => {setEmployee([...employee,res])
-    })
+      .then((res) => {
+        setEmployee([...employee, res]);
+      })
       .catch((err) => console.log(err));
   };
 
@@ -31,18 +32,17 @@ export const Employee = () => {
     };
 
     const payloadjson = JSON.stringify(payload);
-    fetch(`http://localhost:3001/employees`,{
-        method: "POST",
-        body: payloadjson,
-        headers:{
-            "content-type":"application/json",
-        },
+    fetch(`http://localhost:3001/employees`, {
+      method: "POST",
+      body: payloadjson,
+      headers: {
+        "content-type": "application/json",
+      },
     })
-    .then((res) =>{
-       console.log(res);
-       getEmployee();
-    })
-    .catch((err) =>console.log(err) )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -81,10 +81,19 @@ export const Employee = () => {
         <button onClick={handleAdd}>ADD EMPLOYEE</button>
       </div>
       <div>
-        {employee.map((emp) =>{
-          return (<Emp key = {emp.id} emp = {emp}/>)
-      })}
-        </div>
+          <button>Show All Departments</button>
+          <button>Show Marketing</button>
+          <button>Show HR</button>
+          <button>SHow IT</button>
+          <button>Show Finance</button>
+          <button>Sort By Salary Ascending</button>
+          <button>Sort By Salary descending</button>
+      </div>
+      <div style={{padding: "20px", border:"2px solid black", margin: "10px"}}>
+        {employee.map((emp) => {
+          return <Emp key={emp.id} emp={emp} />;
+        })}
+      </div>
     </div>
   );
 };
