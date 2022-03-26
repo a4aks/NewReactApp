@@ -14,7 +14,8 @@ export const Employee = () => {
   }, []);
 
   const showByMarketing = () =>{
-      const newEmployee = employee.filter(emp => emp.department === "Marketing");
+      console.log(employee);
+      const newEmployee = employee.filter((emp) => emp.department === "HR" );
       console.log(newEmployee);
       setEmployee(newEmployee)
   }
@@ -22,7 +23,7 @@ export const Employee = () => {
     fetch(`http://localhost:3001/employees`)
       .then((res) => res.json())
       .then((res) => {
-        setEmployee([res]);
+        setEmployee(res);
       })
       .catch((err) => console.log(err));
   };
@@ -98,7 +99,7 @@ export const Employee = () => {
       </div>
       <div style={{padding: "20px", border:"2px solid black", margin: "10px"}}>
         {employee.map((emp) => {
-          return <Emp key={emp.id} emp={emp} />;
+          return <Emp key={emp.id} {...emp} />;
         })}
       </div>
     </div>
