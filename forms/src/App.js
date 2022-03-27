@@ -1,35 +1,36 @@
 import './App.css';
 import {useState, useRef} from 'react';
+import { Forms } from './components/Forms';
 // import {Styles} from "./components/Styles.jsx";
 
 function App() {
 
-  const fileRef = useRef();
-  const [formData, setFormData] = useState({});
+  // const fileRef = useRef();
+  // const [formData, setFormData] = useState({});
 
-  const onChangeHandle = (e)=>{
-    let {name, value, type, checked} = e.currentTarget;
-    console.log(name,value, type, checked);
+  // const onChangeHandle = (e)=>{
+  //   let {name, value, type, checked} = e.currentTarget;
+  //   console.log(name,value, type, checked);
 
-    if(name  === "files"){
-      console.log(fileRef.current.files[0].name);
-    }
+  //   if(name  === "files"){
+  //     console.log(fileRef.current.files[0].name);
+  //   }
 
-    if(name === 'age' && value < 18){
-      console.log("You are under age");
-    }
+  //   if(name === 'age' && value < 18){
+  //     console.log("You are under age");
+  //   }
 
-    value = type  === "checkbox" ? checked : value;
-    setFormData({
-      ...formData,
-      [name]:value
-    })
-  }
-  console.log(formData);
+  //   value = type  === "checkbox" ? checked : value;
+  //   setFormData({
+  //     ...formData,
+  //     [name]:value
+  //   })
+  // }
+  // console.log(formData);
   return (
     <div className="App">
       <h1>User Form</h1>
-      <form>
+      {/* <form>
         <div>
           <label>First Name</label>
           <input type = "text" name = "fname" placeholder = "first name" value = {formData.fname} onChange = {onChangeHandle}/>
@@ -75,10 +76,11 @@ function App() {
           <label>No</label>
           <input  name = "yes" type = "radio" onChange = {onChangeHandle}/>
         </div> */}
-        <div>
+        {/* <div>
           <button>Submit</button>
         </div>
-      </form>
+      </form> */} 
+      <Forms />
     </div>
   );
 }
