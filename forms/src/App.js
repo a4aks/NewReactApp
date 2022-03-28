@@ -1,6 +1,7 @@
 import './App.css';
 import {useState, useRef} from 'react';
 import { Forms } from './components/Forms';
+import { UseButton } from './components/UseButton';
 // import {Styles} from "./components/Styles.jsx";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
   // console.log(formData);
   return (
     <div className="App">
-      <h1>User Form</h1>
+      {/* <h1>User Form</h1> */}
       {/* <form>
         <div>
           <label>First Name</label>
@@ -80,7 +81,8 @@ function App() {
           <button>Submit</button>
         </div>
       </form> */} 
-      <Forms />
+      {/* <Forms /> */}
+      <UseButton />
     </div>
   );
 }
