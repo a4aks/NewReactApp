@@ -1,22 +1,18 @@
 import {Routes, Route} from "react-router-dom";
 import "./App.css";
 import { Home } from "./components/Home";
-import { About } from "./components/About";
-import { Users } from "./components/Users";
-import { User } from "./components/User";
-import { NotFound } from "./components/NotFound";
+import { Navbar } from "./components/Navbar";
+import { ProductDetails } from "./components/ProductDetails";
+import { Products } from "./components/Products";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
-        <Route path = "/" element = {  <Home />}/>
-        <Route path = "about" element = { <About />}/>
-        <Route path = "users/*" element = { <Users />}>
-            {/* <Route path = "new" element = { <User />} /> */}
-        </Route>
-        {/* <Route path = "users/:cake" element ={<User />}/> */}
-        <Route path = "*" element ={<NotFound  />}/>
+        <Route path = "/" element = {<Home/>}/>
+        <Route path = "/product" element = {<Products/>}/>
+        <Route path = "/product/:id" element = {<ProductDetails/>}/>
       </Routes>
     </div>
   );

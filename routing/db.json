@@ -1,8 +1,55 @@
 {
-  "users": [
-    { "name": "SmartPhone", "price": 30, "id": 1 },
-    { "name": "Watch", "price": 20, "id": 2 },
-    { "name": "Shirt", "price": 50, "id": 3 },
-    { "name": "Pants", "price": 100, "id": 4 }
+  "product": [
+    {
+      "name": "SmartPhone",
+      "price": 30,
+      "id": 1
+    },
+    {
+      "name": "Watch",
+      "price": 20,
+      "id": 2
+    },
+    {
+      "name": "Shirt",
+      "price": 50,
+      "id": 3
+    },
+    {
+      "name": "Pant",
+      "price": 1000,
+      "id": 4
+    },
+
+    {
+      "name": "Shoos",
+      "price": 150,
+      "id": 5
+    },
+    {
+      "name": "Sleeper",
+      "price": 250,
+      "id": 6
+    },
+    {
+      "name": "Computer",
+      "price": 28150,
+      "id": 7
+    },
+    {
+      "name": "Mouse",
+      "price": 250,
+      "id": 8
+    },
+    {
+      "name": "Books",
+      "price": 550,
+      "id": 9
+    },
+    {
+      "name": "Bag",
+      "price": 750,
+      "id": 10
+    }
   ]
 }
